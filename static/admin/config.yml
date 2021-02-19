@@ -24,3 +24,21 @@ collections:
       - {label: "Cliente", name: "client", widget: "string"}
       - {label: "Director de arte", name: "artDirector", widget: "string"}
       - {label: "Estilista", name: "s", widget: "string"}
+
+  - label: "Moda"
+    name: "moda"
+    folder: "content/moda"
+    create: true
+    widget: "object"
+    summary: '{{fields.name}}: {{fields.birthdate}}'
+    fields:
+      - label: "Moda"
+          name: "modaGallery"
+          widget: "list"
+          summary: '{{fields.image}}'
+          field: {label: Image, name: image, widget: image}
+      - {label: "Modelo", name: "model", widget: "string"}
+      - {label: "Fotógrafo", name: "camera", widget: "string"}
+      - {label: "Cliente", name: "client", widget: "string"}
+      - {label: "Director de arte", name: "artDirector", widget: "string"}
+      - {label: "Estilista", name: "s", widget: "string"}
