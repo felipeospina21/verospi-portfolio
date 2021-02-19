@@ -5,13 +5,15 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-collections:      
+collections:
   - label: "Novias"
     name: "novias"
     folder: "content/novias"
+    slug: "{{year}}-{{month}}-{{day}}-{slug}}"
+    identifier_field: model
     create: true
     widget: "object"
-    summary: '{{fields.name}}: {{fields.birthdate}}'
+    summary: "{{fields.name}}: {{fields.birthdate}}"
     fields:
       - label: "Foto"
         name: "fotoNovias"
@@ -19,26 +21,28 @@ collections:
         media_library:
           config:
             multiple: true
-      - {label: "Modelo", name: "model", widget: "string"}
-      - {label: "Fotógrafo", name: "camera", widget: "string"}
-      - {label: "Cliente", name: "client", widget: "string"}
-      - {label: "Director de arte", name: "artDirector", widget: "string"}
-      - {label: "Estilista", name: "s", widget: "string"}
+      - { label: "Modelo", name: "model", widget: "string" }
+      - { label: "Fotógrafo", name: "camera", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string" }
+      - { label: "Director de arte", name: "artDirector", widget: "string" }
+      - { label: "Estilista", name: "s", widget: "string" }
 
   - label: "Moda"
     name: "moda"
     folder: "content/moda"
+    slug: "{{year}}-{{month}}-{{day}}-{slug}}"
+    identifier_field: model
     create: true
     widget: "object"
-    summary: '{{fields.name}}: {{fields.birthdate}}'
+    summary: "{{fields.name}}: {{fields.birthdate}}"
     fields:
       - label: "Moda"
         name: "modaGallery"
         widget: "list"
-        summary: '{{fields.image}}'
-        field: {label: Image, name: image, widget: image}
-      - {label: "Modelo", name: "model", widget: "string"}
-      - {label: "Fotógrafo", name: "camera", widget: "string"}
-      - {label: "Cliente", name: "client", widget: "string"}
-      - {label: "Director de arte", name: "artDirector", widget: "string"}
-      - {label: "Estilista", name: "s", widget: "string"}
+        summary: "{{fields.image}}"
+        field: { label: Image, name: image, widget: image }
+      - { label: "Modelo", name: "model", widget: "string" }
+      - { label: "Fotógrafo", name: "camera", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string" }
+      - { label: "Director de arte", name: "artDirector", widget: "string" }
+      - { label: "Estilista", name: "s", widget: "string" }
