@@ -33,10 +33,10 @@ collections:
     summary: '{{fields.name}}: {{fields.birthdate}}'
     fields:
       - label: "Moda"
-          name: "modaGallery"
-          widget: "list"
-          summary: '{{fields.image}}'
-          field: {label: Image, name: image, widget: image}
+        name: "modaGallery"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
       - {label: "Modelo", name: "model", widget: "string"}
       - {label: "Fotógrafo", name: "camera", widget: "string"}
       - {label: "Cliente", name: "client", widget: "string"}
