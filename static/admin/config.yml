@@ -9,7 +9,7 @@ collections:
   - label: "Novias"
     name: "novias"
     folder: "content/novias"
-    slug: "{{year}}-{{month}}-{{day}}-{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: model
     create: true
     widget: "object"
@@ -30,7 +30,7 @@ collections:
   - label: "Moda"
     name: "moda"
     folder: "content/moda"
-    slug: "{{year}}-{{month}}-{{day}}-{slug}}"
+    slug: "{{year}}-{{slug}}"
     identifier_field: model
     create: true
     widget: "object"
