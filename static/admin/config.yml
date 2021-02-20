@@ -9,18 +9,17 @@ collections:
   - label: "Novias"
     name: "novias"
     folder: "content/novias"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{slug}}"
     identifier_field: model
     create: true
     widget: "object"
     summary: "{{fields.name}}: {{fields.birthdate}}"
     fields:
-      - label: "Foto"
-        name: "fotoNovias"
-        widget: "image"
-        media_library:
-          config:
-            multiple: true
+      - label: "Fotos novia"
+        name: "gallery"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field: { label: Image, name: image, widget: image }
       - {
           label: "Template Key",
           name: "templateKey",
@@ -43,8 +42,8 @@ collections:
     widget: "object"
     summary: "{{fields.name}}: {{fields.birthdate}}"
     fields:
-      - label: "Moda"
-        name: "modaGallery"
+      - label: "Fotos campaña"
+        name: "gallery"
         widget: "list"
         summary: "{{fields.image}}"
         field: { label: Image, name: image, widget: image }

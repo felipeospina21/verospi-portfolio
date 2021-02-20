@@ -1,18 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import CmsImage from "../components/CmsImage"
+import CollectionPreview from "../components/CollectionPreview"
 
 export default function noviasTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-  return (
-    <div>
-      <p>{frontmatter.model}</p>
-      <p>{frontmatter.camera}</p>
-      <p>{frontmatter.client}</p>
-      <CmsImage src={frontmatter.fotoNovias} alt="pic" />
-    </div>
-  )
+  return <CollectionPreview frontmatter={frontmatter} />
 }
 
 export const pageQuery = graphql`
@@ -22,10 +15,9 @@ export const pageQuery = graphql`
         artDirector
         camera
         client
-        fotoNovias
-        modaGallery
+        gallery
         model
-        s
+        stylist
       }
     }
   }

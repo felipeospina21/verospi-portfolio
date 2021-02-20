@@ -1,18 +1,15 @@
 import React from "react"
-
-import Layout from "../components/layout"
-import Image from "../components/Image"
+import { Box } from "@chakra-ui/react"
 import SEO from "../components/seo"
+import Categories from "../components/Categories"
 // import NoviasTemplate from "../templates/noviasTemplate"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      Hello World
-    </div>
-    {/* <NoviasTemplate/> */}
-  </Layout>
+    <Box>Hello World</Box>
+    <Categories />
+  </>
 )
 
 export default IndexPage
