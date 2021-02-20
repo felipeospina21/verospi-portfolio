@@ -10,10 +10,9 @@ collections:
     name: "novias"
     folder: "content/novias"
     slug: "{{year}}-{{slug}}"
-    identifier_field: model
     create: true
     widget: "object"
-    summary: "{{fields.name}}: {{fields.birthdate}}"
+    summary: "{{fields.title}}: {{fields.date}}"
     fields:
       - label: "Fotos novia"
         name: "gallery"
@@ -26,21 +25,31 @@ collections:
           widget: "hidden",
           default: "novias",
         }
-      - { label: "Title", name: "title", widget: "hidden", default: "novias" }
-      - { label: "Modelo", name: "model", widget: "string" }
+      - { label: "Nombre Campaña", name: "title", widget: "string" }
+      - { label: "Fecha Matrimonio", name: "date", widget: "datetime" }
+      - { label: "Novia", name: "model", widget: "string" }
       - { label: "Fotógrafo", name: "camera", widget: "string" }
       - { label: "Cliente", name: "client", widget: "string" }
-      - { label: "Director de arte", name: "artDirector", widget: "string" }
-      - { label: "Estilista", name: "stylist", widget: "string" }
+      - {
+          label: "Director de arte",
+          name: "artDirector",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Estilista",
+          name: "stylist",
+          widget: "string",
+          required: false,
+        }
 
   - label: "Moda"
     name: "moda"
     folder: "content/moda"
     slug: "{{year}}-{{slug}}"
-    identifier_field: model
     create: true
     widget: "object"
-    summary: "{{fields.name}}: {{fields.birthdate}}"
+    summary: "{{fields.title}}: {{fields.date}}"
     fields:
       - label: "Fotos campaña"
         name: "gallery"
@@ -53,9 +62,20 @@ collections:
           widget: "hidden",
           default: "moda",
         }
-      - { label: "Title", name: "title", widget: "hidden", default: "moda" }
-      - { label: "Modelo", name: "model", widget: "string" }
+      - { label: "Nombre Campaña", name: "title", widget: "string" }
+      - { label: "Fecha Campaña", name: "date", widget: "datetime" }
+      - { label: "Modelos", name: "model", widget: "string" }
       - { label: "Fotógrafo", name: "camera", widget: "string" }
       - { label: "Cliente", name: "client", widget: "string" }
-      - { label: "Director de arte", name: "artDirector", widget: "string" }
-      - { label: "Estilista", name: "stylist", widget: "string" }
+      - {
+          label: "Director de arte",
+          name: "artDirector",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Estilista",
+          name: "stylist",
+          widget: "string",
+          required: false,
+        }
