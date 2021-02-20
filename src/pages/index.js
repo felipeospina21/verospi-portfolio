@@ -8,7 +8,7 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <Box>Hello World</Box>
-    <Categories />
+    {/* <Categories /> */}
   </>
 )
 
