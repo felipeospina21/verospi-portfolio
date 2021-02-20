@@ -7,4 +7,6 @@ camera: Mateo
 client: Exito
 artDirector: Juan
 s: Juliana
+title: moda
+templateKey: moda
 ---

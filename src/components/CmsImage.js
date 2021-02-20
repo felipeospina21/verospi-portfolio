@@ -3,19 +3,17 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
-const Image = ({ src, ...rest }) => {
+const CmsImage = ({ src, ...rest }) => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { internal: { mediaType: { regex: "/image/" } } }
-      ) {
+      images: allFile(filter: { absolutePath: { regex: "/static/img/" } }) {
         edges {
           node {
             relativePath
             extension
             publicURL
             childImageSharp {
-              fluid(maxWidth: 1500) {
+              fluid(maxWidth: 1000, maxHeight: 800) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -26,7 +24,8 @@ const Image = ({ src, ...rest }) => {
   `)
 
   const match = useMemo(
-    () => data.images.edges.find(({ node }) => src === node.relativePath),
+    () =>
+      data.images.edges.find(({ node }) => src === "/img/" + node.relativePath),
     [data, src]
   )
 
@@ -35,15 +34,15 @@ const Image = ({ src, ...rest }) => {
   const { node: { childImageSharp, publicURL, extension } = {} } = match
 
   if (extension === "svg" || !childImageSharp) {
-    return <img src={publicURL} alt="some svg" {...rest} />
+    return <img src={publicURL} {...rest} />
   }
 
   return <Img fluid={childImageSharp.fluid} {...rest} />
 }
 
-Image.propTypes = {
+CmsImage.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
 }
 
-export default Image
+export default CmsImage

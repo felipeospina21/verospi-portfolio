@@ -21,11 +21,18 @@ collections:
         media_library:
           config:
             multiple: true
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "novias",
+        }
+      - { label: "Title", name: "title", widget: "hidden", default: "novias" }
       - { label: "Modelo", name: "model", widget: "string" }
       - { label: "Fotógrafo", name: "camera", widget: "string" }
       - { label: "Cliente", name: "client", widget: "string" }
       - { label: "Director de arte", name: "artDirector", widget: "string" }
-      - { label: "Estilista", name: "s", widget: "string" }
+      - { label: "Estilista", name: "stylist", widget: "string" }
 
   - label: "Moda"
     name: "moda"
@@ -41,8 +48,15 @@ collections:
         widget: "list"
         summary: "{{fields.image}}"
         field: { label: Image, name: image, widget: image }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "moda",
+        }
+      - { label: "Title", name: "title", widget: "hidden", default: "moda" }
       - { label: "Modelo", name: "model", widget: "string" }
       - { label: "Fotógrafo", name: "camera", widget: "string" }
       - { label: "Cliente", name: "client", widget: "string" }
       - { label: "Director de arte", name: "artDirector", widget: "string" }
-      - { label: "Estilista", name: "s", widget: "string" }
+      - { label: "Estilista", name: "stylist", widget: "string" }

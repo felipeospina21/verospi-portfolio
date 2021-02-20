@@ -1,42 +1,18 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Image from "../components/Image"
 import SEO from "../components/seo"
-import PostLink from "../components/postLink"
-import {graphql} from 'gatsby'
+// import NoviasTemplate from "../templates/noviasTemplate"
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      Hello World
     </div>
-    <h1>Blog Posts</h1>
-    {edges.map(edge => <PostLink key={edge.node.id} post={edge.node} />)}
+    {/* <NoviasTemplate/> */}
   </Layout>
 )
 
 export default IndexPage
-
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-          }
-        }
-      }
-    }
-  }
-`

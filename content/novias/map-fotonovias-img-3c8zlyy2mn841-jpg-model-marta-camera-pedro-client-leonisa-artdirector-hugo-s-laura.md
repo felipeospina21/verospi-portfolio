@@ -5,4 +5,6 @@ camera: pedro
 client: leonisa
 artDirector: hugo
 s: laura
+title: novias
+templateKey: novias
 ---
