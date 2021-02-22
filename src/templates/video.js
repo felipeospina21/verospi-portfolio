@@ -9,7 +9,7 @@ export default function videoTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query modaCollection($title: String!) {
+  query videoCollection($title: String!) {
     markdownRemark(frontmatter: { title: { eq: $title } }) {
       frontmatter {
         title

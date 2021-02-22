@@ -9,7 +9,7 @@ export default function comercialTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query modaCollection($title: String!) {
+  query comercialCollection($title: String!) {
     markdownRemark(frontmatter: { title: { eq: $title } }) {
       frontmatter {
         title
