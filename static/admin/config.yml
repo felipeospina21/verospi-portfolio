@@ -12,7 +12,7 @@ collections:
     slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
     create: true
     widget: "object"
-    summary: "{{fields.title}}: {{year}}-{{month}}}"
+    summary: "{{fields.title}}: {{year}}-{{month}}"
     fields:
       - label: "Fotos novia"
         name: "gallery"
@@ -49,7 +49,7 @@ collections:
     slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
     create: true
     widget: "object"
-    summary: "{{fields.title}}: {{year}}-{{month}}}"
+    summary: "{{fields.title}}: {{year}}-{{month}}"
     fields:
       - label: "Fotos campaña"
         name: "gallery"
@@ -66,6 +66,80 @@ collections:
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }
       - { label: "Modelos", name: "model", widget: "string" }
       - { label: "Fotógrafo", name: "camera", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string" }
+      - {
+          label: "Director de arte",
+          name: "artDirector",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Estilista",
+          name: "stylist",
+          widget: "string",
+          required: false,
+        }
+
+  - label: "Comercial"
+    name: "comercial"
+    folder: "content/comercial"
+    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    create: true
+    widget: "object"
+    summary: "{{fields.title}}: {{year}}-{{month}}"
+    fields:
+      - label: "Fotos campaña"
+        name: "gallery"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field: { label: Image, name: image, widget: image }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "comercial",
+        }
+      - { label: "Nombre Campaña", name: "title", widget: "string" }
+      - { label: "Fecha Campaña", name: "date", widget: "datetime" }
+      - { label: "Modelos", name: "model", widget: "string" }
+      - { label: "Fotógrafo", name: "camera", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string" }
+      - {
+          label: "Director de arte",
+          name: "artDirector",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Estilista",
+          name: "stylist",
+          widget: "string",
+          required: false,
+        }
+
+  - label: "Video"
+    name: "video"
+    folder: "content/video"
+    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    create: true
+    widget: "object"
+    summary: "{{fields.title}}: {{year}}-{{month}}"
+    fields:
+      - label: "Videos campaña"
+        name: "gallery"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field: { label: Videos, name: video, widget: file }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "video",
+        }
+      - { label: "Nombre Campaña", name: "title", widget: "string" }
+      - { label: "Fecha Campaña", name: "date", widget: "datetime" }
+      - { label: "Modelos", name: "model", widget: "string" }
+      - { label: "Camarógrafo", name: "camera", widget: "string" }
       - { label: "Cliente", name: "client", widget: "string" }
       - {
           label: "Director de arte",
