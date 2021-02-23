@@ -4,15 +4,21 @@ import { Box, Heading, Center } from "@chakra-ui/react"
 
 const Hero = ({ text, src, alt, height }) => {
   return (
-    <Box w="100%" h={height} overflow="hidden" position="relative">
+    <Box
+      w="100%"
+      h={height}
+      maxH={["530px", "770px", "800px", "1500px"]}
+      overflow="hidden"
+      position="relative"
+    >
       <Box
-        bgColor="#333"
+        bgColor="#f5f5f5"
         w="100%"
         h="100%"
         position="absolute"
         top="0"
         zIndex="20"
-        opacity="0.3"
+        opacity="0.1"
       />
       <Image src={src} alt={alt} />
       <Center

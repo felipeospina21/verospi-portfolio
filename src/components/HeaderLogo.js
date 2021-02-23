@@ -1,7 +1,7 @@
 import React from "react"
 import { Icon, Link } from "@chakra-ui/react"
 import { Link as GatsbyLink } from "gatsby"
-import Logo from "../assets/logo.svg"
+import Logo from "../assets/logoVerospi.svg"
 
 const HeaderLogo = () => {
   return (
