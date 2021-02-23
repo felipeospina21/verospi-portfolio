@@ -1,11 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Collections from "../components/Collections"
+import SEO from "../components/seo"
+import { Box } from "@chakra-ui/react"
 
 export default function noviasPage({ data }) {
   const { allMarkdownRemark: edges } = data
 
-  return <Collections data={edges} />
+  return (
+    <>
+      <SEO title="Novias" />
+      {/* <Box position="relative"> */}
+        <Collections data={edges} />
+      {/* </Box> */}
+    </>
+  )
 }
 
 export const pageQuery = graphql`

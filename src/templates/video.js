@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Collection from "../components/Collection"
+import CollectionVideo from "../components/CollectionVideo"
 
 export default function videoTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
-  return <Collection data={frontmatter} />
+  return <CollectionVideo data={frontmatter} />
 }
 
 export const pageQuery = graphql`
