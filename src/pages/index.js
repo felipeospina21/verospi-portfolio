@@ -21,7 +21,7 @@ const IndexPage = () => {
         />
       ) : (
         <Hero
-          text="Veronica Ospina"
+          text=""
           src="hero.jpg"
           alt="Imagen de modelo femenina"
           height={heightList}

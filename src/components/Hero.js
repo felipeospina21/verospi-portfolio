@@ -11,15 +11,15 @@ const Hero = ({ text, src, alt, height }) => {
       overflow="hidden"
       position="relative"
     >
-      <Box
+      {/* <Box
         bgColor="#f5f5f5"
         w="100%"
         h="100%"
         position="absolute"
         top="0"
         zIndex="20"
-        opacity="0.1"
-      />
+        // opacity="0.1"
+      /> */}
       <Image src={src} alt={alt} />
       <Center
         position="absolute"

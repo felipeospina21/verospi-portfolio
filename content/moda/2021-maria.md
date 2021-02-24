@@ -1,6 +1,6 @@
 ---
 gallery:
-  - /img/aykut-aktas-dy4-fer7zwc-unsplash.jpg
+  - /img/moda-thumbnail.jpg
   - /img/chris-murray-ygzex5ylkea-unsplash.jpg
   - /img/milan-popovic-0n93dsz2ikg-unsplash.jpg
 templateKey: moda
