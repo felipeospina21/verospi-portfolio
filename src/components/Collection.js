@@ -4,7 +4,6 @@ import CmsImage from "./CmsImage"
 
 const Collection = ({ data }) => {
   const { frontmatter } = data
-  const thumbnail = frontmatter.gallery[0]
   return (
     <Box border="1px solid black">
       <Heading as="h1" size="xl">

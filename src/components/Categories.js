@@ -17,7 +17,7 @@ const Categories = () => {
           Portafolio
         </Heading>
       </Center>
-      <SimpleGrid columns={[1, null, 2, 3, null, 4]} spacing={5}>
+      <SimpleGrid columns={[1, null, 2, null, 4]} spacing={5}>
         {categoriesList.map(category => {
           return (
             <Box

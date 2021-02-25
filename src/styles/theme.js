@@ -5,4 +5,8 @@ export const brandTheme = {
       orange: "#e69136",
     },
   },
+  fonts: {
+    primary:"Montserrat",
+    secondary: "Lato"
+  }
 }

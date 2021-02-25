@@ -17,7 +17,6 @@ const IndexPage = () => {
           src="1.jpg"
           alt="Imagen de modelo femenina"
           height={heightList}
-          // height={["500px", "600px", "800px"]}
         />
       ) : (
         <Hero

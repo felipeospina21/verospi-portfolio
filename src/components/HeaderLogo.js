@@ -1,12 +1,18 @@
 import React from "react"
 import { Icon, Link } from "@chakra-ui/react"
 import { Link as GatsbyLink } from "gatsby"
-import Logo from "../assets/logoVerospi.svg"
+import Logo from "../assets/LogoNuevo.svg"
 
 const HeaderLogo = () => {
   return (
     <Link as={GatsbyLink} to="/" _focus={{ bg: "none" }}>
-      <Icon as={Logo} w="70px" h="65px" mt="0.5rem" ml="0.5rem" />
+      <Icon
+        as={Logo}
+        w="120px"
+        h="70px"
+        mt="0.5rem"
+        ml="0.5rem"
+      />
     </Link>
   )
 }
