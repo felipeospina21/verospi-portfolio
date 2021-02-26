@@ -12,7 +12,7 @@ const ContactInfo = () => {
       </Text>
       <Text mx="1rem">
         {" "}
-        <Icon as={GrPhone} /> XXX-XXX-XXXX
+        <Icon as={GrPhone} /> (54) 314-679-3183
       </Text>
     </Center>
   )

@@ -1,15 +1,24 @@
-import React from 'react';
-import Logo from '../assets/LogoNuevo.svg'
-import {Box, Icon} from '@chakra-ui/react'
-// import Image from '../assets/LogoVerospiNuevo.svg'
+import React from "react"
+import { Center, Heading } from "@chakra-ui/react"
+import BioContainer from '../components/BioContainer'
 
-const biografia = () => {
+
+const biografiaPage = () => {
+
   return (
-    <Box h="500px" w="600px" border="1px solid black" >
-      <Icon as={Logo} h="100px" w="100px" />
- 
-    </Box>
-  );
-};
+    <>
+      <Center m="2rem">
+        <Heading as="h1" size="xl">
+          Biografía
+        </Heading>
+      </Center>
+      <BioContainer/>
 
-export default biografia;
+    
+    </>
+  )
+}
+
+
+
+export default biografiaPage

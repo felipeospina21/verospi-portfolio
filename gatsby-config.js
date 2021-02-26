@@ -5,30 +5,13 @@ module.exports = {
     author: `@felipeospina21`,
   },
   plugins: [
+    "gatsby-plugin-breakpoints",
+    "@chakra-ui/gatsby-plugin",
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
-    "@chakra-ui/gatsby-plugin",
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-breakpoints",
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: "Montserrat",
-            variable: true,
-            weights: ["400,500,700"],
-          },
-          {
-            family: "Lato",
-            variable: true,
-            weights: ["400,500,700"],
-          },
-        ],
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

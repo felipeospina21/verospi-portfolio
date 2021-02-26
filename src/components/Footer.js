@@ -8,9 +8,10 @@ const Footer = () => {
     <>
       <Box
         as="footer"
-        // background="brand.green"
-        fontSize="sm"
+        background="brand.main"
+        fontSize={["xs","sm"]}
         p={["0.5rem", "1rem"]}
+        mt="1rem"
       >
         <Box maxW="500px" m="auto">
           <Grid templateColumns="1fr 0.5fr" gap={1}>
