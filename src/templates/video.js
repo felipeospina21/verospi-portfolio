@@ -1,11 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import CollectionVideo from "../components/CollectionVideo"
+import { Heading, Center } from "@chakra-ui/react"
 
 export default function videoTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
-  return <CollectionVideo data={frontmatter} />
+  return (
+    <>
+      <Center>
+        <Heading as="h1" size="xl">
+          Video
+        </Heading>
+      </Center>
+      <CollectionVideo data={frontmatter} />
+    </>
+  )
 }
 
 export const pageQuery = graphql`

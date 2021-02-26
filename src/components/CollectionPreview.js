@@ -2,8 +2,6 @@ import React from "react"
 import { Link as GatsbyLink } from "gatsby"
 import { Box, Center, Link, Heading } from "@chakra-ui/react"
 import CmsImage from "./CmsImage"
-import Image600 from "./Image600"
-
 
 const CollectionPreview = ({ data }) => {
   const { frontmatter } = data

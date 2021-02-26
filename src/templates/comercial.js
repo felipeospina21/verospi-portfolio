@@ -1,11 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Collection from "../components/Collection"
+import { Heading, Center } from "@chakra-ui/react"
 
 export default function comercialTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
-  return <Collection data={frontmatter} />
+  return (
+  <>
+  <Center>
+    <Heading as="h1" size="xl">
+      Comercial
+    </Heading>
+  </Center>
+  <Collection data={frontmatter} />)
+  </>
 }
 
 export const pageQuery = graphql`
