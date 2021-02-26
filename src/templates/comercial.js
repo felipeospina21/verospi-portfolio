@@ -7,14 +7,15 @@ export default function comercialTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
   return (
-  <>
-  <Center>
-    <Heading as="h1" size="xl">
-      Comercial
-    </Heading>
-  </Center>
-  <Collection data={frontmatter} />)
-  </>
+    <>
+      <Center>
+        <Heading as="h1" size="xl">
+          Comercial
+        </Heading>
+      </Center>
+      <Collection data={frontmatter} />
+    </>
+  )
 }
 
 export const pageQuery = graphql`
