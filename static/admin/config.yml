@@ -129,6 +129,7 @@ collections:
         name: "gallery"
         widget: "list"
         summary: "{{fields.image}}"
+        field: { label: Imagen Portada, name: image, widget: image }
         field: { label: Videos, name: video, widget: file }
       - {
           label: "Template Key",
