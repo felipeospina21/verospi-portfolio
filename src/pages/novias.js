@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Collections from "../components/Collections"
 import SEO from "../components/seo"
-import { Box } from "@chakra-ui/react"
+import { Heading, Center } from "@chakra-ui/react"
 
 export default function noviasPage({ data }) {
   const { allMarkdownRemark: edges } = data
@@ -10,9 +10,12 @@ export default function noviasPage({ data }) {
   return (
     <>
       <SEO title="Novias" />
-      {/* <Box position="relative"> */}
-        <Collections data={edges} />
-      {/* </Box> */}
+      <Center>
+        <Heading as="h1" size="xl">
+          Novias
+        </Heading>
+      </Center>
+      <Collections data={edges} />
     </>
   )
 }

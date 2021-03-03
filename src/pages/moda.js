@@ -1,11 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Collections from "../components/Collections"
+import SEO from "../components/seo"
+import { Heading, Center } from "@chakra-ui/react"
 
 export default function modaPage({ data }) {
   const { allMarkdownRemark: edges } = data
 
-  return <Collections data={edges} />
+  return (
+    <>
+      <SEO title="Moda" />
+      <Center>
+        <Heading as="h1" size="xl">
+          Moda
+        </Heading>
+      </Center>
+      <Collections data={edges} />
+    </>
+  )
 }
 
 export const pageQuery = graphql`

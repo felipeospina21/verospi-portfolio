@@ -1,18 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Heading, Center } from "@chakra-ui/react"
 import Collection from "../components/Collection"
+import { Heading } from "@chakra-ui/react"
 
 export default function noviasTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
   return (
     <>
-      <Center>
-        <Heading as="h1" size="xl">
-          Novias
-        </Heading>
-      </Center>
+      <Heading as="h1" size="xl">
+        {frontmatter.title}
+      </Heading>
       <Collection data={frontmatter} />
     </>
   )

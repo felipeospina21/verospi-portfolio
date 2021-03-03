@@ -1,7 +1,7 @@
 export const brandTheme = {
   colors: {
     brand: {
-      main: "#E0AC94",
+      main: "#ffc29b",
       secondary: "#e69136",
     },
   },
