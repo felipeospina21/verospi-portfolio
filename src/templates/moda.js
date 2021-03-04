@@ -28,6 +28,7 @@ export const pageQuery = graphql`
         artDirector
         stylist
         gallery
+        templateKey
       }
     }
   }

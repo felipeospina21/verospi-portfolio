@@ -5,7 +5,7 @@ import CmsImage from "./CmsImage"
 
 const CollectionPreview = ({ data }) => {
   const { frontmatter } = data
-  const thumbnail = frontmatter.gallery[0]
+  const thumbnail = frontmatter.templateKey === "video" ? frontmatter.image : frontmatter.gallery[0]
   return (
     <Center>
       <Link as={GatsbyLink} to={data.fields.slug}>

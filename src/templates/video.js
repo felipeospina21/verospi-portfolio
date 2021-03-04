@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import CollectionVideo from "../components/CollectionVideo"
+import Collection from "../components/Collection"
 import { Heading } from "@chakra-ui/react"
 
 export default function videoTemplate({ data }) {
@@ -11,7 +11,7 @@ export default function videoTemplate({ data }) {
       <Heading as="h1" size="xl">
         {frontmatter.title}
       </Heading>
-      <CollectionVideo data={frontmatter} />
+      <Collection data={frontmatter} />
     </>
   )
 }
@@ -28,6 +28,8 @@ export const pageQuery = graphql`
         artDirector
         stylist
         gallery
+        image
+        templateKey
       }
     }
   }
