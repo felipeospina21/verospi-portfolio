@@ -7,23 +7,25 @@ import Hero from "../components/Hero"
 
 const IndexPage = () => {
   const breakpoints = useBreakpoint()
-  const heightList = ["80vh", "90vh", null, "500px"]
+  const heightList = ["900px"]
   return (
     <>
       <SEO title="Home" />
-      {breakpoints.md ? (
+      {breakpoints.sm ? (
         <Hero
-          text="Veronica Ospina"
-          src="1.jpg"
+          // text="Veronica Ospina"
+          // src="1.jpg"
+          src="hero-mobile.jpg"
           alt="Imagen de modelo femenina"
-          height={heightList}
+          height="1000px"
         />
       ) : (
         <Hero
           text=""
-          src="hero.jpg"
+          // src="hero.jpg"
+          src="hero-desktop.jpg"
           alt="Imagen de modelo femenina"
-          height={heightList}
+          height="1600px"
         />
       )}
       <Categories />

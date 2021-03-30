@@ -5,9 +5,9 @@ import { Box, Heading, Center } from "@chakra-ui/react"
 const Hero = ({ text, src, alt, height }) => {
   return (
     <Box
-      w="100%"
-      h={height}
-      maxH={["530px", "770px", "800px", "1500px"]}
+      // w="100%"
+      // h={height}
+      maxH={height}
       overflow="hidden"
       position="relative"
     >
