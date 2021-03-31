@@ -1,6 +1,8 @@
 import React from "react"
+import { Box } from "@chakra-ui/react"
+
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  <div className="video">
+  <Box w="100%" h="100%">
     <iframe
       src={videoSrcURL}
       title={videoTitle}
@@ -9,7 +11,9 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      width="100%"
+      height="100%"
     />
-  </div>
+  </Box>
 )
 export default Video

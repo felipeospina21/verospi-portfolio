@@ -1,6 +1,6 @@
 ---
 gallery:
-  - /img/samplevideo_1280x720_1mb.mp4
+  - /img/Video.mp4
 image: /img/verospi-makeup-fashion-4.jpg
 templateKey: video
 title: Comercial Disney
