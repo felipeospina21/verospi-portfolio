@@ -3,10 +3,12 @@ import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import SEO from "../components/seo"
 import Categories from "../components/Categories"
-import Hero from "../components/Hero"
+import ImgCarousel from "../components/ImgCarousel"
 
 const IndexPage = () => {
   const breakpoints = useBreakpoint()
+  const desktopArray = [{ src: "hero-desktop.jpg", alt: "foto" }]
+  const mobileArray = [{ src: "hero-mobile2.jpg", alt: "foto" }]
   // const heightList = ["900px"]
   // #5A5551
   // Raleway
@@ -14,21 +16,9 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       {breakpoints.sm ? (
-        <Hero
-          // text="Veronica Ospina"
-          // src="1.jpg"
-          src="hero-mobile2.jpg"
-          alt="Imagen de modelo femenina"
-          height="1000px"
-        />
+        <ImgCarousel array={mobileArray} />
       ) : (
-        <Hero
-          text=""
-          // src="hero.jpg"
-          src="hero-desktop.jpg"
-          alt="Imagen de modelo femenina"
-          height="1600px"
-        />
+        <ImgCarousel array={desktopArray} />
       )}
       <Categories />
     </>

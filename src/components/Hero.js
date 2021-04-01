@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../components/Image"
+import Image from "./Image"
 import { Box, Heading, Center } from "@chakra-ui/react"
 
 const Hero = ({ text, src, alt, height }) => {
@@ -11,16 +11,8 @@ const Hero = ({ text, src, alt, height }) => {
       overflow="hidden"
       position="relative"
     >
-      {/* <Box
-        bgColor="#f5f5f5"
-        w="100%"
-        h="100%"
-        position="absolute"
-        top="0"
-        zIndex="20"
-        // opacity="0.1"
-      /> */}
       <Image src={src} alt={alt} />
+
       <Center
         position="absolute"
         top={["70px", "100px", "150px", "170px"]}
