@@ -8,6 +8,8 @@ import Hero from "../components/Hero"
 const IndexPage = () => {
   const breakpoints = useBreakpoint()
   // const heightList = ["900px"]
+  // #5A5551
+  // Raleway
   return (
     <>
       <SEO title="Home" />
