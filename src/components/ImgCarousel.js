@@ -1,8 +1,8 @@
 import React from "react"
 import { Box } from "@chakra-ui/react"
-import Slide from "./Slide"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ImgCarousel = ({ array }) => {
   return (
@@ -17,7 +17,15 @@ const ImgCarousel = ({ array }) => {
       >
         {array.map(slide => {
           const { src, alt } = slide
-          return <Slide src={src} alt={alt} />
+          return (
+            <Box h={["350px", "400px", "500px", "700px"]} w="100%">
+              <GatsbyImage
+                key={slide.node.relativePath}
+                image={getImage(slide.node)}
+                alt="pic"
+              />
+            </Box>
+          )
         })}
       </Carousel>
     </Box>

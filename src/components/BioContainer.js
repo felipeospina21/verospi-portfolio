@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "./Image500"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   Box,
   Text,
@@ -8,10 +8,8 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react"
-import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const BioContainer = () => {
-  const breakpoints = useBreakpoint()
   return (
     <>
       <BioContent />
@@ -25,7 +23,11 @@ export const BioContent = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} spacing={4} mb="2rem">
       <Box maxH="700px" overflow="hidden">
-        <Image src="verospi-bio2.jpg" alt="Foto Veronica Ospina" />
+        <StaticImage
+          src="../images/verospi-bio.jpg"
+          alt="Foto Veronica Ospina"
+          width="500"
+        />
       </Box>
       <Box mt="1rem">
         <Text my={paragraphMarginY}>

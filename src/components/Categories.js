@@ -1,14 +1,46 @@
 import React, { useState } from "react"
 import { Link as GatsbyLink } from "gatsby"
 import { Box, Link, SimpleGrid, Heading, Center } from "@chakra-ui/react"
-import Image500 from "./Image500"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Categories = () => {
   const [categoriesList] = useState([
-    { name: "novias", img: "novias-preview.jpg" },
-    { name: "moda", img: "moda-preview.jpg" },
-    { name: "comercial", img: "comercial-preview.jpg" },
-    { name: "video", img: "video-preview.jpg" },
+    {
+      name: "novias",
+      img: (
+        <StaticImage
+          src="../images/novias-preview.jpg"
+          alt="Imagen de una novia"
+        />
+      ),
+    },
+    {
+      name: "moda",
+      img: (
+        <StaticImage
+          src="../images/moda-preview.jpg"
+          alt="Imagen de una modelo"
+        />
+      ),
+    },
+    {
+      name: "comercial",
+      img: (
+        <StaticImage
+          src="../images/comercial-preview.jpg"
+          alt="Imagen de una modelo"
+        />
+      ),
+    },
+    {
+      name: "video",
+      img: (
+        <StaticImage
+          src="../images/video-preview.jpg"
+          alt="Imagen de una modelo"
+        />
+      ),
+    },
   ])
   return (
     <>
@@ -39,10 +71,7 @@ const Categories = () => {
                     zIndex="20"
                     opacity="0.4"
                   />
-                  <Image500
-                    src={category.img}
-                    alt={`imagen ${category.name}`}
-                  />
+                  {category.img}
                   <Box
                     position="absolute"
                     // h="40px"
