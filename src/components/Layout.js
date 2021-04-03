@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Header from "./Header"
 import Footer from "./Footer"
 import { Box } from "@chakra-ui/react"
+import WhatsappBtn from "./WhtasappBtn"
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
         m={[" 0 0.5rem", null, null, null, null, "0 auto"]}
         maxW="1800px"
       >
+        <WhatsappBtn />
         {children}
       </Box>
       <Footer />
