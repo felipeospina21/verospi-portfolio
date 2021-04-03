@@ -58,7 +58,7 @@ export const PortfolioMenu = ({ onClose }) => {
       <MenuList>
         {linksData.map(link => {
           return (
-            <MenuItem h="80px">
+            <MenuItem key={link.url} h="80px">
               <NavLink url={link.url} text={link.text} onClose={onClose} />
             </MenuItem>
           )

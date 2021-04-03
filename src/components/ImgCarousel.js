@@ -9,20 +9,22 @@ const ImgCarousel = ({ array }) => {
     <Box w="100%" maxW="1800px" margin="2rem 0">
       <Carousel
         autoPlay="true"
-        // autoFocus="true"
         centerMode={false}
         infiniteLoop="true"
+        showThumbs="false"
         // centerSlidePercentage={95}
         interval={3000}
       >
         {array.map(slide => {
-          const { src, alt } = slide
           return (
-            <Box h={["350px", "400px", "500px", "700px"]} w="100%">
+            <Box
+              key={slide.node.relativePath}
+              h={["350px", "400px", "500px", "700px"]}
+              w="100%"
+            >
               <GatsbyImage
-                key={slide.node.relativePath}
                 image={getImage(slide.node)}
-                alt="pic"
+                alt="Imagen de modelos y maquillaje"
               />
             </Box>
           )

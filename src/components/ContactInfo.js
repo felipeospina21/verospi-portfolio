@@ -1,18 +1,18 @@
 import React from "react"
 import { Text, Center, Icon } from "@chakra-ui/react"
-import { GrLocation, GrPhone } from "react-icons/gr"
+import { GrLocation, GrMailOption } from "react-icons/gr"
 
-const ContactInfo = () => {
+const ContactInfo = ({ dir, fontSize, margin }) => {
   return (
-    <Center flexDir="row" h="100%" mt="1rem">
-      <Text mx="1rem">
+    <Center flexDir={dir} h="100%" mt="1rem">
+      <Text mx="1rem" my={margin} fontSize={fontSize}>
+        {" "}
+        <Icon as={GrMailOption} /> verospimakeup@gmail.com
+      </Text>
+      <Text mx="1rem" my={margin} fontSize={fontSize}>
         {" "}
         <Icon as={GrLocation} />
         Medellin, Colombia
-      </Text>
-      <Text mx="1rem">
-        {" "}
-        <Icon as={GrPhone} /> (54) 314-679-3183
       </Text>
     </Center>
   )

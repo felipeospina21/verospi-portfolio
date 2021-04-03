@@ -1,5 +1,4 @@
 import React from "react"
-// import { Box } from "@chakra-ui/react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
@@ -10,9 +9,7 @@ const IndexPage = ({ data }) => {
   const breakpoints = useBreakpoint()
   const desktopArray = data.desktop.edges
   const mobileArray = data.mobile.edges
-  // const heightList = ["900px"]
-  // #5A5551
-  // Raleway
+
   return (
     <>
       <SEO title="Home" />
@@ -42,7 +39,7 @@ export const pageQuery = graphql`
           id
           childImageSharp {
             gatsbyImageData(
-              width: 1800
+              width: 800
               placeholder: DOMINANT_COLOR
               formats: [AUTO, WEBP, AVIF]
             )

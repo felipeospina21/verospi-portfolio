@@ -5,12 +5,14 @@ import ContactInfo from "../components/ContactInfo"
 const contactoPage = () => {
   return (
     <Box>
-      <Center>
+      <Center my="3rem">
         <Heading as="h1" size="xl">
           Contacto
         </Heading>
       </Center>
-      <ContactInfo />
+      <Box mt="5rem" mb="20rem">
+        <ContactInfo dir="column" fontSize="lg" margin="1rem" />
+      </Box>
     </Box>
   )
 }
