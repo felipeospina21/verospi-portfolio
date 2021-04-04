@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ImgCarousel = ({ array }) => {
   return (
-    <Box w="100%" maxW="1800px" margin="2rem 0">
+    <Box w="100%" maxW="1800px" margin="-2rem auto">
       <Carousel
         autoPlay="true"
         centerMode={false}
@@ -17,16 +17,11 @@ const ImgCarousel = ({ array }) => {
       >
         {array.map(slide => {
           return (
-            <Box
+            <GatsbyImage
               key={slide.node.relativePath}
-              h={["350px", "400px", "500px", "700px"]}
-              w="100%"
-            >
-              <GatsbyImage
-                image={getImage(slide.node)}
-                alt="Imagen de modelos y maquillaje"
-              />
-            </Box>
+              image={getImage(slide.node)}
+              alt="Imagen de modelos y maquillaje"
+            />
           )
         })}
       </Carousel>

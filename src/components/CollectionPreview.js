@@ -10,7 +10,8 @@ const CollectionPreview = ({ data }) => {
     <Center>
       <Link as={GatsbyLink} to={data.fields.slug}>
         <Box
-          w={["330px", "400px", "500px", "600px"]}
+          // w={["330px", "400px", "500px", "600px"]}
+          w="330px"
           h="400px"
           m="auto"
           overflow="hidden"

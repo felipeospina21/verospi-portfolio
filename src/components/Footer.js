@@ -18,7 +18,7 @@ const Footer = () => {
         <Box maxW="500px" m="auto">
           <Social />
           {breakpoints.sm ? (
-            <ContactInfo dir="column" margin="0.5rem" />
+            <ContactInfo dir="column" margin="0.2rem" />
           ) : (
             <ContactInfo dir="row" />
           )}
