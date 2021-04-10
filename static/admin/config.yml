@@ -9,7 +9,7 @@ collections:
   - label: "Novias"
     name: "novias"
     folder: "content/novias"
-    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
@@ -46,7 +46,7 @@ collections:
   - label: "Moda"
     name: "moda"
     folder: "content/moda"
-    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
@@ -83,7 +83,7 @@ collections:
   - label: "Comercial"
     name: "comercial"
     folder: "content/comercial"
-    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
@@ -120,7 +120,7 @@ collections:
   - label: "Video"
     name: "video"
     folder: "content/video"
-    slug: "{{year}}-{{month}}-{{date}}-{{slug}}"
+    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
