@@ -92,7 +92,13 @@ collections:
         name: "gallery"
         widget: "list"
         summary: "{{fields.image}}"
-        field: { label: Image, name: image, widget: image }
+        field:
+          {
+            label: Image,
+            name: image,
+            widget: image,
+            media_folder: "/static/img/comercial",
+          }
       - {
           label: "Template Key",
           name: "templateKey",
