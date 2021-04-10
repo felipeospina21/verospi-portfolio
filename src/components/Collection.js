@@ -7,7 +7,7 @@ const Collection = ({ data }) => {
   const { frontmatter } = data
   return (
     <Box>
-      <Center my={["1rem", "2rem"]} flexDir="column">
+      <Center my={["1rem", "2rem"]} flexDir="column" mx="auto">
         <Heading as="h1" size="xl">
           {frontmatter.title}
         </Heading>

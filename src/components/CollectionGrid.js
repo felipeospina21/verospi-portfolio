@@ -6,14 +6,9 @@ import Video from "./Video"
 const CollectionGrid = ({ frontmatter }) => {
   return (
     <Grid
-      templateColumns={[
-        "1fr",
-        null,
-        "repeat(2, 1fr)",
-        null,
-        "repeat(3, 1fr)",
-      ]}
+      templateColumns={["1fr", null, null, null, "repeat(3,1fr)"]}
       gap={4}
+      justifyContent="center"
     >
       {frontmatter.gallery.map(pict => {
         return (
@@ -23,7 +18,7 @@ const CollectionGrid = ({ frontmatter }) => {
                 <Video videoSrcURL={pict} videoTitle={frontmatter.title} />
               </GridItem>
             ) : (
-              <GridItem key={pict}>
+              <GridItem key={pict} m="auto" w="400px">
                 <CmsImage src={pict} alt={pict} />
               </GridItem>
             )}
