@@ -5,7 +5,10 @@ import CmsImage from "./CmsImage"
 
 const CollectionPreview = ({ data }) => {
   const { frontmatter } = data
-  const thumbnail = frontmatter.templateKey === "video" ? frontmatter.image : frontmatter.gallery[0]
+  const thumbnail =
+    frontmatter.templateKey === "video"
+      ? frontmatter.image
+      : frontmatter.gallery[0]
   return (
     <Center>
       <Link as={GatsbyLink} to={data.fields.slug}>
@@ -20,14 +23,15 @@ const CollectionPreview = ({ data }) => {
           <CmsImage src={thumbnail} alt={thumbnail} />
           <Box
             position="absolute"
-            top="20%"
+            top="2rem"
             left={["5%"]}
-            color="white"
-            bg="rgba(0,0,0,0.1)"
+            color="whitesmoke"
+            bg="rgba(0,0,0,0.4)"
+            // bg="brand.transparentMain"
             borderRadius="6px"
             m="auto"
           >
-            <Heading as="h2" size="xl" textTransform="capitalize">
+            <Heading as="h2" fontSize="1.5rem" textTransform="capitalize">
               {frontmatter.title}
             </Heading>
           </Box>

@@ -7,9 +7,7 @@ gallery:
   - /img/verospi-makeup-commercial-27.jpg
   - /img/verospi-makeup-commercial-28.jpg
 templateKey: comercial
-title: Susse
+title: SUSSE
 date: 2021-04-10T20:53:53.863Z
-model: Juana
-camera: Pedro
-client: Susse
+client: SUSSE
 ---

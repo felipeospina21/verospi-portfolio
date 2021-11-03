@@ -9,6 +9,7 @@ export const brandTheme = {
   colors: {
     brand: {
       main: "#ffc29b",
+      transparentMain: "rgba(254,191,156,0.7)",
       secondary: "#e69136",
       body: "#5A5551",
     },
