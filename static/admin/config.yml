@@ -38,7 +38,7 @@ collections:
   - label: "Moda"
     name: "moda"
     folder: "content/moda"
-    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
+    slug: "{{fields.title}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
@@ -56,18 +56,24 @@ collections:
         }
       - { label: "Nombre Campaña", name: "title", widget: "string" }
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }
-      - { label: "Modelos", name: "model", widget: "string" }
-      - { label: "Fotógrafo", name: "camera", widget: "string" }
-      - { label: "Cliente", name: "client", widget: "string" }
+      - { label: "Cliente", name: "client", widget: "string", required: false }
       - {
-          label: "Director de arte",
-          name: "artDirector",
+          label: "Fotografía",
+          name: "camera",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Model@", name: "model", widget: "string", required: false }
+      - { label: "Peinado", name: "hair", widget: "string", required: false }
+      - {
+          label: "Estilismo",
+          name: "stylist",
           widget: "string",
           required: false,
         }
       - {
-          label: "Estilista",
-          name: "stylist",
+          label: "Dirección de arte",
+          name: "artDirector",
           widget: "string",
           required: false,
         }

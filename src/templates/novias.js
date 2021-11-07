@@ -22,11 +22,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "dd/mm/yyyy")
-        client
-        model
         camera
-        artDirector
-        stylist
+        hair
         gallery
         templateKey
       }
