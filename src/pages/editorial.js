@@ -9,7 +9,7 @@ export default function editorialPage({ data }) {
 
   return (
     <>
-      <SEO title="Comercial" />
+      <SEO title="Editorial" />
       <Center>
         <Heading as="h1" size="xl">
           Editorial
@@ -33,7 +33,11 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "dd/mm/yyyy")
+            client
+            model
             camera
+            artDirector
+            stylist
             hair
             gallery
             templateKey

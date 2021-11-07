@@ -38,6 +38,7 @@ export const pageQuery = graphql`
             camera
             artDirector
             stylist
+            hair
             gallery
             image
             templateKey
