@@ -7,7 +7,7 @@ gallery:
   - /img/verospi-makeup-commercial-27.jpg
   - /img/verospi-makeup-commercial-28.jpg
 templateKey: editorial
-title: SUSSE
+title: SÜSSE
 date: 2021-04-10T20:53:53.863Z
-client: SUSSE
+client: SÜSSE
 ---

@@ -21,12 +21,18 @@ export const BioContent = () => {
   const paragraphMarginY = "0.5rem"
 
   return (
-    <SimpleGrid columns={[1, null, 2]} spacing={4} mb="2rem">
-      <Box maxH="700px" overflow="hidden">
+    <SimpleGrid
+      columns={[1, null, 2]}
+      spacing={4}
+      m="auto auto 2rem auto"
+      maxW="1300px"
+    >
+      <Box maxH="800px" overflow="hidden">
         <StaticImage
           src="../images/verospi-bio.jpg"
           alt="Foto Veronica Ospina"
-          width="500"
+          width={500}
+          // height={700}
         />
       </Box>
       <Box mt="1rem">
@@ -55,6 +61,9 @@ export const BioContent = () => {
           Estudios complementarios:
         </Heading>
         <UnorderedList>
+          <ListItem>
+            Diplomado en peinado editorial, El muñequero. Medellín (2017)
+          </ListItem>
           <ListItem my={paragraphMarginY}>
             Beauty and fashion advanced makeup course, Makeup forever Academy.
             New York (2015)

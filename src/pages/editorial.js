@@ -3,9 +3,15 @@ import { graphql } from "gatsby"
 import Collections from "../components/Collections"
 import SEO from "../components/seo"
 import { Heading, Center } from "@chakra-ui/react"
+import ClientsPreview from "../components/ClientsPreview"
 
 export default function editorialPage({ data }) {
   const { allMarkdownRemark: edges } = data
+
+  const nodes = edges.edges
+  const clientsArr = []
+  nodes.map(node => clientsArr.push(node.node.frontmatter.client))
+  console.log(clientsArr)
 
   return (
     <>
@@ -15,6 +21,7 @@ export default function editorialPage({ data }) {
           Editorial
         </Heading>
       </Center>
+      {/* <ClientsPreview clients={clientsArr}/> */}
       <Collections data={edges} />
     </>
   )

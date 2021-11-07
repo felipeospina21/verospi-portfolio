@@ -56,7 +56,15 @@ collections:
         }
       - { label: "Nombre Campaña", name: "title", widget: "string" }
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }
-      - { label: "Cliente", name: "client", widget: "string", required: false }
+      # - { label: "Cliente", name: "client", widget: "string", required: false }
+      - label: "Cliente"
+        name: "client"
+        widget: "relation"
+        collection: "clientes"
+        search_fields: ["clientes.*.name"]
+        value_field: "clientes.*.name"
+        multiple: false
+        required: false
       - {
           label: "Fotografía",
           name: "camera",
@@ -99,7 +107,15 @@ collections:
         }
       - { label: "Nombre Campaña", name: "title", widget: "string" }
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }
-      - { label: "Cliente", name: "client", widget: "string", required: false }
+      # - { label: "Cliente", name: "client", widget: "string", required: false }
+      - label: "Cliente"
+        name: "client"
+        widget: "relation"
+        collection: "clientes"
+        search_fields: ["clientes.*.name"]
+        value_field: "clientes.*.name"
+        multiple: false
+        required: false
       - {
           label: "Fotografía",
           name: "camera",
@@ -143,7 +159,16 @@ collections:
         }
       - { label: "Nombre Campaña", name: "title", widget: "string" }
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }
-      - { label: "Cliente", name: "client", widget: "string", required: false }
+      # - { label: "Cliente", name: "client", widget: "string", required: false }
+      - label: "Cliente"
+        name: "client"
+        widget: "relation"
+        collection: "clientes"
+        search_fields: ["clientes.*.name"]
+        value_field: "clientes.*.name"
+        multiple: false
+        required: false
+
       - { label: "Video", name: "camera", widget: "string", required: false }
       - { label: "Model@", name: "model", widget: "string", required: false }
       - { label: "Peinado", name: "hair", widget: "string", required: false }
@@ -159,3 +184,16 @@ collections:
           widget: "string",
           required: false,
         }
+  - label: "Clients"
+    name: "clientes"
+    files:
+      - label: "Listado de Clientes"
+        name: "clientsList"
+        file: "content/clients.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Clientes"
+            name: "clients"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
