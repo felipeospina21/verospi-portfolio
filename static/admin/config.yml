@@ -184,7 +184,7 @@ collections:
           widget: "string",
           required: false,
         }
-  - label: "Clients"
+  - label: "Clientes"
     name: "clientes"
     files:
       - label: "Listado de Clientes"
@@ -193,7 +193,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Clientes"
-            name: "clients"
+            name: "clientes"
             widget: "list"
             fields:
               - { label: "Name", name: "name", widget: "string" }
