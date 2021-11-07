@@ -4,7 +4,7 @@ import { SimpleGrid } from "@chakra-ui/react"
 
 const Collections = ({ data }) => {
   return (
-    <SimpleGrid columns={[1, null,null, null,2]} spacing={2} m="2rem auto">
+    <SimpleGrid columns={[1, null, null, null, 2]} spacing={2} m="2rem auto">
       {data.edges.map(collection => {
         const { node } = collection
         return <CollectionPreview key={node.frontmatter.title} data={node} />

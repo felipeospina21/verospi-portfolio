@@ -9,7 +9,7 @@ collections:
   - label: "Novias"
     name: "novias"
     folder: "content/novias"
-    slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
+    slug: "{{fields.title}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
     summary: "{{fields.title}}: {{year}}-{{month}}"
@@ -25,23 +25,15 @@ collections:
           widget: "hidden",
           default: "novias",
         }
-      - { label: "Nombre Campaña", name: "title", widget: "string" }
+      - { label: "Nombres Pareja", name: "title", widget: "string" }
       - { label: "Fecha Matrimonio", name: "date", widget: "datetime" }
-      - { label: "Novia", name: "model", widget: "string" }
-      - { label: "Fotógrafo", name: "camera", widget: "string" }
-      - { label: "Cliente", name: "client", widget: "string" }
       - {
-          label: "Director de arte",
-          name: "artDirector",
+          label: "Fotografía",
+          name: "camera",
           widget: "string",
           required: false,
         }
-      - {
-          label: "Estilista",
-          name: "stylist",
-          widget: "string",
-          required: false,
-        }
+      - { label: "Peinado", name: "hair", widget: "string", required: false }
 
   - label: "Moda"
     name: "moda"
@@ -80,9 +72,9 @@ collections:
           required: false,
         }
 
-  - label: "Comercial"
-    name: "comercial"
-    folder: "content/comercial"
+  - label: "Editorial"
+    name: "editorial"
+    folder: "content/editorial"
     slug: "{{fields.client}}-{{slug}}-{{year}}-{{month}}"
     create: true
     widget: "object"
@@ -97,7 +89,7 @@ collections:
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "comercial",
+          default: "editorial",
         }
       - { label: "Nombre Campaña", name: "title", widget: "string" }
       - { label: "Fecha Campaña", name: "date", widget: "datetime" }

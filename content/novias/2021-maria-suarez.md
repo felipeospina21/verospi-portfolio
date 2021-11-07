@@ -5,5 +5,6 @@ gallery:
 templateKey: novias
 title: Sara y Pedro
 date: 2021-02-20T15:55:25.011Z
-client: Sara Suarez
+camera: Sara Suarez
+hair: Paola
 ---

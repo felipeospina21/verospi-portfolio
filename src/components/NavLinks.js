@@ -44,7 +44,7 @@ export const PortfolioMenu = ({ onClose }) => {
   const [linksData] = useState([
     { url: "/novias", text: "Novias" },
     { url: "/moda", text: "Moda" },
-    { url: "/comercial", text: "Comercial" },
+    { url: "/editorial", text: "Editorial" },
     { url: "/video", text: "Video" },
   ])
   return (

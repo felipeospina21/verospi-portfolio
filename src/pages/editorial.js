@@ -4,7 +4,7 @@ import Collections from "../components/Collections"
 import SEO from "../components/seo"
 import { Heading, Center } from "@chakra-ui/react"
 
-export default function comercialPage({ data }) {
+export default function editorialPage({ data }) {
   const { allMarkdownRemark: edges } = data
 
   return (
@@ -12,7 +12,7 @@ export default function comercialPage({ data }) {
       <SEO title="Comercial" />
       <Center>
         <Heading as="h1" size="xl">
-          Comercial
+          Editorial
         </Heading>
       </Center>
       <Collections data={edges} />
@@ -23,7 +23,7 @@ export default function comercialPage({ data }) {
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "comercial" } } }
+      filter: { frontmatter: { templateKey: { eq: "editorial" } } }
     ) {
       edges {
         node {
@@ -33,11 +33,8 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "dd/mm/yyyy")
-            client
-            model
             camera
-            artDirector
-            stylist
+            hair
             gallery
             templateKey
           }

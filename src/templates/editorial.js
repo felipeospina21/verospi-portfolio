@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Collection from "../components/Collection"
 import { Heading } from "@chakra-ui/react"
 
-export default function comercialTemplate({ data }) {
+export default function editorialTemplate({ data }) {
   const { markdownRemark: frontmatter } = data
 
   return (
@@ -17,7 +17,7 @@ export default function comercialTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query comercialCollection($title: String!) {
+  query editorialCollection($title: String!) {
     markdownRemark(frontmatter: { title: { eq: $title } }) {
       frontmatter {
         title

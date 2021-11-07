@@ -41,10 +41,10 @@ export const BioContent = () => {
           editoriales, campañas publicitarias y de moda, con clientes como:
         </Text>
         <Text fontWeight="bold">
-          Éxito, Arkitect, Leonisa, Pomys, Chevignon, Punto Blanco, Falabella,
-          Kibys, Pajarolimón, Oropendola, Süsse Lingerie, Makúa, Esprit,
-          Spirito, Boamar, Urban Rock, Animalista, Beat a bee, Yerbabuena, entre
-          otros.
+          Bronzini, Arkitect, Leonisa, Pomys, Chevignon, Kika Vargas, Gef, Punto
+          Blanco, Falabella, Priah Heritage, Kibys, Pajarolimón, Oropendola,
+          Süsse Lingerie, Makúa, Esprit, Spirito, Boamar, Urban Rock, Beat a
+          bee, Yerbabuena, entre otros.
         </Text>
         <Text my={paragraphMarginY}>
           He trabajado también para Colombiamoda, y diferentes desfiles de la
