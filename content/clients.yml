@@ -4,3 +4,8 @@ clients:
   - name: BRONZINI
   - name: SÜSSE
   - name: CUARENT4ONZAS
+clientes:
+  - name: ARKITECT
+  - name: BRONZINI
+  - name: SÜSSE
+  - name: CUARENT4ONZAS
