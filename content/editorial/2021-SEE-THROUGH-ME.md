@@ -4,7 +4,7 @@ gallery:
   - /img/stm-2.jpg
   - /img/stm-3.jpg
   - /img/stm-4.jpg
-templateKey: moda
+templateKey: editorial
 title: SEE THROUGH ME
 date: 2021-04-01T22:06:32.420Z
 camera: Nicole Korsten @nicolekorsten

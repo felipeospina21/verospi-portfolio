@@ -6,7 +6,7 @@ gallery:
   - /img/backstage-4.jpg
   - /img/backstage-5.jpg
   - /img/backstage-6.jpg
-templateKey: moda
+templateKey: editorial
 title: BACKSTAGE
 date: 2021-02-01T15:56:35.283Z
 camera: Giuseppe La Rosa

@@ -5,7 +5,7 @@ gallery:
   - /img/qns-2.jpg
   - /img/qns-4.jpg
   - /img/qns-5.jpg
-templateKey: moda
+templateKey: editorial
 title: QUEENS OF NOISE
 date: 2021-04-01T22:06:32.420Z
 camera: Fabio Abecassis
