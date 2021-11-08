@@ -24,7 +24,7 @@ const Categories = () => {
       ),
     },
     {
-      name: "comercial",
+      name: "editorial",
       img: (
         <StaticImage
           src="../images/comercial-preview.jpg"
