@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-breakpoints",
+    `gatsby-plugin-postcss`,
     "@chakra-ui/gatsby-plugin",
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,

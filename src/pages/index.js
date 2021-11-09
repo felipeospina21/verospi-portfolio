@@ -1,7 +1,7 @@
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import Categories from "../components/Categories"
 import ImgCarousel from "../components/ImgCarousel"
 
@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <SEO title="Home" />
+      <Seo title="Home" />
       {breakpoints.sm ? (
         <ImgCarousel array={mobileArray} />
       ) : (

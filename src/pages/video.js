@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import { Heading, Center } from "@chakra-ui/react"
 import ClientsFilter from "../components/ClientsFilter"
 
 export default function videoPage({ data }) {
   return (
     <>
-      <SEO title="Video" />
+      <Seo title="Video" />
       <Center m="1rem auto" width="100%">
         <Heading as="h1" size="xl">
           Video

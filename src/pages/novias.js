@@ -1,7 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Collections from "../components/Collections"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
+
 import { Heading, Center } from "@chakra-ui/react"
 
 export default function noviasPage({ data }) {
@@ -9,8 +10,8 @@ export default function noviasPage({ data }) {
 
   return (
     <>
-      <SEO title="Novias" />
-      <Center m='1rem auto' width='100%'>
+      <Seo title="Novias" />
+      <Center m="1rem auto" width="100%">
         <Heading as="h1" size="xl">
           Novias
         </Heading>

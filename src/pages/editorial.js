@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import { Heading, Center } from "@chakra-ui/react"
 import ClientsFilter from "../components/ClientsFilter"
 
 export default function editorialPage({ data }) {
   return (
     <>
-      <SEO title="Editorial" />
+      <Seo title="Editorial" />
       <Center m="1rem auto" width="100%">
         <Heading as="h1" size="xl">
           Editorial
