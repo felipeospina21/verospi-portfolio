@@ -34,7 +34,7 @@ const CmsImage = ({ src, ...rest }) => {
   const { node: { childImageSharp, publicURL, extension } = {} } = match
 
   if (extension === "svg" || !childImageSharp) {
-    return <img src={publicURL} {...rest} />
+    return <img src={publicURL} alt="brand logo" {...rest} />
   }
 
   return <Img fluid={childImageSharp.fluid} {...rest} />

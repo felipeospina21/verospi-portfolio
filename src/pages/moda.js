@@ -1,21 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Collections from "../components/Collections"
 import SEO from "../components/seo"
 import { Heading, Center } from "@chakra-ui/react"
+import ClientsFilter from "../components/ClientsFilter"
 
 export default function modaPage({ data }) {
-  const { allMarkdownRemark: edges } = data
-
   return (
     <>
       <SEO title="Moda" />
-      <Center>
+      <Center m="1rem auto" width="100%">
         <Heading as="h1" size="xl">
           Moda
         </Heading>
       </Center>
-      <Collections data={edges} />
+      <ClientsFilter data={data} />
     </>
   )
 }
@@ -43,6 +41,11 @@ export const pageQuery = graphql`
             templateKey
           }
         }
+      }
+    }
+    clientsYaml {
+      categories {
+        name
       }
     }
   }

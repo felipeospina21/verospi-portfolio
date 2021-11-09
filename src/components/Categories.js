@@ -72,19 +72,23 @@ const Categories = () => {
                     opacity="0.4"
                   />
                   {category.img}
-                  <Box
+                  <Center
                     position="absolute"
-                    // h="40px"
-                    top="40%"
-                    left="25%"
-                    color="white"
-                    bg="rgba(0,0,0,0.1)"
-                    borderRadius="6px"
+                    top="50%"
+                    left={["50%"]}
+                    transform="translateX(-50%)"
+                    color="whitesmoke"
+                    bg="#ffffff10"
+                    sx={{ backdropFilter: "blur(12px)" }}
+                    borderRadius="10px"
+                    m="auto"
+                    padding="0.7em 2em"
+                    width="80%"
                   >
                     <Heading as="h2" size="2xl" textTransform="capitalize">
                       {category.name}
                     </Heading>
-                  </Box>
+                  </Center>
                 </Box>
               </Link>
             </Box>

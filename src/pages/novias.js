@@ -5,17 +5,17 @@ import SEO from "../components/seo"
 import { Heading, Center } from "@chakra-ui/react"
 
 export default function noviasPage({ data }) {
-  const { allMarkdownRemark: edges } = data
+  // const { allMarkdownRemark: edges } = data
 
   return (
     <>
       <SEO title="Novias" />
-      <Center>
+      <Center m='1rem auto' width='100%'>
         <Heading as="h1" size="xl">
           Novias
         </Heading>
       </Center>
-      <Collections data={edges} />
+      <Collections data={data.allMarkdownRemark.edges} />
     </>
   )
 }

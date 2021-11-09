@@ -21,20 +21,28 @@ const CollectionPreview = ({ data }) => {
           position="relative"
         >
           <CmsImage src={thumbnail} alt={thumbnail} />
-          <Box
+          <Center
             position="absolute"
-            top="2rem"
-            left={["5%"]}
+            top="0.5rem"
+            left={["50%"]}
+            transform="translateX(-50%)"
             color="whitesmoke"
-            bg="rgba(0,0,0,0.4)"
-            // bg="brand.transparentMain"
+            bg="#ffffff10"
+            sx={{ backdropFilter: "blur(12px)" }}
             borderRadius="6px"
             m="auto"
+            padding="0.7em 2em"
+            width="80%"
           >
-            <Heading as="h2" fontSize="1.5rem" textTransform="capitalize">
+            <Heading
+              as="h2"
+              fontSize="1.4rem"
+              textTransform="capitalize"
+              margin="0 auto"
+            >
               {frontmatter.title}
             </Heading>
-          </Box>
+          </Center>
         </Box>
       </Link>
     </Center>

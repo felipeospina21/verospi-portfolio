@@ -1,28 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Collections from "../components/Collections"
 import SEO from "../components/seo"
 import { Heading, Center } from "@chakra-ui/react"
-import ClientsPreview from "../components/ClientsPreview"
+import ClientsFilter from "../components/ClientsFilter"
 
 export default function editorialPage({ data }) {
-  const { allMarkdownRemark: edges } = data
-
-  const nodes = edges.edges
-  const clientsArr = []
-  nodes.map(node => clientsArr.push(node.node.frontmatter.client))
-  console.log(clientsArr)
-
   return (
     <>
       <SEO title="Editorial" />
-      <Center>
+      <Center m="1rem auto" width="100%">
         <Heading as="h1" size="xl">
           Editorial
         </Heading>
       </Center>
-      {/* <ClientsPreview clients={clientsArr}/> */}
-      <Collections data={edges} />
+      <ClientsFilter data={data} />
     </>
   )
 }
@@ -50,6 +41,11 @@ export const pageQuery = graphql`
             templateKey
           }
         }
+      }
+    }
+    clientsYaml {
+      categories {
+        name
       }
     }
   }

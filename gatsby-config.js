@@ -11,8 +11,16 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-yaml`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clients-list`,
+        path: `./content/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
