@@ -14,6 +14,8 @@ const ImgCarousel = ({ array }) => {
         showThumbs="false"
         // centerSlidePercentage={95}
         interval={3000}
+        // showIndicators={false}
+        showStatus={false}
       >
         {array.map(slide => {
           return (
