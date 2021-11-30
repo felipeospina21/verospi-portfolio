@@ -2,8 +2,7 @@ import React from "react"
 import { Grid, GridItem } from "@chakra-ui/react"
 import CmsImage from "./CmsImage"
 import Video from "./Video"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const CollectionGrid = ({ frontmatter }) => {
   return (

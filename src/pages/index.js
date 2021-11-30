@@ -7,8 +7,12 @@ import ImgCarousel from "../components/ImgCarousel"
 const IndexPage = ({ data }) => {
   const desktopArray = data.desktop.edges
   const mobileArray = data.mobile.edges
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   const breakpoint = 720
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))

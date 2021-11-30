@@ -4,8 +4,12 @@ import Social from "./Social"
 import { Box, Center } from "@chakra-ui/react"
 
 const Footer = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   const breakpoint = 720
+
+  useEffect(()=>{
+    setWidth(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))

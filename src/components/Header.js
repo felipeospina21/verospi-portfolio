@@ -5,8 +5,12 @@ import ToggleNav from "./ToggleNav"
 import FixedNav from "./FixedNav"
 
 const Header = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(0)
   const breakpoint = 1024
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth))
