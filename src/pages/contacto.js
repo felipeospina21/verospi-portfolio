@@ -1,12 +1,12 @@
 import React from "react"
 import { Box, Center, Heading } from "@chakra-ui/react"
 import ContactInfo from "../components/ContactInfo"
-import Seo from "../components/Seo"
+// import Seo from "../components/Seo"
 
 const contactoPage = () => {
   return (
     <>
-      <Seo title="Bigorafía" />
+      {/* <Seo title="Bigorafía" /> */}
 
       <Box>
         <Center my="3rem">
