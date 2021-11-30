@@ -1,12 +1,17 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Box, Flex } from "@chakra-ui/react"
-import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import HeaderLogo from "./HeaderLogo"
 import ToggleNav from "./ToggleNav"
 import FixedNav from "./FixedNav"
 
 const Header = () => {
-  const breakpoints = useBreakpoint()
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 1024
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+  }, [])
+
   return (
     <Box
       as="header"
@@ -20,7 +25,7 @@ const Header = () => {
     >
       <Flex as="div" m="0 auto" h="100%" maxW="1800px">
         <HeaderLogo />
-        {breakpoints.md ? <ToggleNav /> : <FixedNav />}
+        {width < breakpoint ? <ToggleNav /> : <FixedNav />}
       </Flex>
     </Box>
   )

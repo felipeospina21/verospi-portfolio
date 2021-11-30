@@ -1,19 +1,23 @@
-import React from "react"
-import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 // import Seo from "../components/Seo"
 import Categories from "../components/Categories"
 import ImgCarousel from "../components/ImgCarousel"
 
 const IndexPage = ({ data }) => {
-  const breakpoints = useBreakpoint()
   const desktopArray = data.desktop.edges
   const mobileArray = data.mobile.edges
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 720
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+  }, [])
 
   return (
     <>
       {/* <Seo title="Home" /> */}
-      {breakpoints.sm ? (
+      {width < breakpoint ? (
         <ImgCarousel array={mobileArray} />
       ) : (
         <ImgCarousel array={desktopArray} />

@@ -27,8 +27,8 @@ const CollectionPreview = ({ data }) => {
             left={["50%"]}
             transform="translateX(-50%)"
             color="whitesmoke"
-            bg="#ffffff10"
-            sx={{ backdropFilter: "blur(12px)" }}
+            bg="rgba(0,0,0,0.4)"
+            // sx={{ backdropFilter: "blur(12px)" }}
             borderRadius="6px"
             m="auto"
             padding="0.7em 2em"

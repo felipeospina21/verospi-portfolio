@@ -18,7 +18,7 @@ const Categories = () => {
       name: "moda",
       img: (
         <StaticImage
-          src="../images/moda-preview.jpg"
+          src="../images/comercial-preview.jpg"
           alt="Imagen de una modelo"
         />
       ),
@@ -27,7 +27,7 @@ const Categories = () => {
       name: "editorial",
       img: (
         <StaticImage
-          src="../images/comercial-preview.jpg"
+          src="../images/moda-preview.jpg"
           alt="Imagen de una modelo"
         />
       ),
@@ -78,8 +78,8 @@ const Categories = () => {
                     left={["50%"]}
                     transform="translateX(-50%)"
                     color="whitesmoke"
-                    bg="#ffffff10"
-                    sx={{ backdropFilter: "blur(12px)" }}
+                    bg="rgba(0,0,0,0.4)"
+                    // sx={{ backdropFilter: "blur(12px)" }}
                     borderRadius="10px"
                     m="auto"
                     padding="0.7em 2em"

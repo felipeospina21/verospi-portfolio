@@ -1,11 +1,16 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import ContactInfo from "./ContactInfo"
 import Social from "./Social"
 import { Box, Center } from "@chakra-ui/react"
-import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const Footer = () => {
-  const breakpoints = useBreakpoint()
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 720
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+  }, [])
+
   return (
     <>
       <Box
@@ -17,7 +22,7 @@ const Footer = () => {
       >
         <Box maxW="500px" m="auto">
           <Social />
-          {breakpoints.sm ? (
+          {width < breakpoint ? (
             <ContactInfo dir="column" margin="0.2rem" />
           ) : (
             <ContactInfo dir="row" />

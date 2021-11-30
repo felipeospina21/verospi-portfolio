@@ -5,7 +5,6 @@ module.exports = {
     author: `@felipeospina21`,
   },
   plugins: [
-    "gatsby-plugin-breakpoints",
     `gatsby-plugin-postcss`,
     "@chakra-ui/gatsby-plugin",
     `gatsby-plugin-netlify-cms`,
