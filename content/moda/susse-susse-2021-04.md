@@ -10,4 +10,7 @@ templateKey: moda
 title: SÜSSE
 date: 2021-04-10T20:53:53.863Z
 client: SÜSSE
+camera: JULIÁN GAVIRIA
+model: VALERIA MURCIA ANTONIA PRIETO ALEJANDRA CARMONA
+stylist: LINA MÚNERA
 ---
