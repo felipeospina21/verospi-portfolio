@@ -7,9 +7,9 @@ gallery:
 templateKey: moda
 title: Gef Índigos
 date: 2022-01-04T01:43:29.557Z
-camera: Carlos Ocampo @caofotografo
+camera: "Carlos Ocampo "
 model: Jekill- Floriane- Catalina Andrade- David Tascón- Matías Paz
-hair: Catalina Uribe @catalinapromua
-stylist: Gerson Aguilar @justgerson
-artDirector: Amalia Restrepo @amaliarestrepo
+hair: Catalina Uribe
+stylist: "Gerson Aguilar "
+artDirector: "Amalia Restrepo "
 ---
