@@ -7,6 +7,7 @@ gallery:
 templateKey: moda
 title: Arkitect & Eugenia Fernández
 date: 2022-01-04T00:15:47.714Z
+client: ARKITECT
 camera: Andrea Swarz @andreaswarz
 model: Fernanda Abbott - Milla Natel
 hair: Simón Atehortúa @saimon.hairstyles
