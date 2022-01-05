@@ -1,8 +1,8 @@
 ---
 gallery:
+  - /img/verospi-makeup-gef-5.gif
   - /img/verospi-makeup-gef-4.gif
   - /img/verospi-makeup-gef-1.gif
-  - /img/verospi-makeup-gef-2.gif
   - /img/verospi-makeup-gef-3.gif
 templateKey: moda
 title: GEF ÍNDIGOS
