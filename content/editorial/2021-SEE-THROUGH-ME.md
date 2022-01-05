@@ -5,7 +5,7 @@ gallery:
   - /img/stm-3.jpg
   - /img/stm-4.jpg
 templateKey: editorial
-title: SEE THROUGH ME
+title: See through me
 date: 2021-04-01T22:06:32.420Z
 camera: Nicole Korsten @nicolekorsten
 hair: Rosa Saputo @flower723
