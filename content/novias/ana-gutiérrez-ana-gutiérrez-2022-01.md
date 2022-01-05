@@ -5,7 +5,7 @@ gallery:
   - /img/035vrf_3936.jpg
   - /img/037vrf_3942.jpg
 templateKey: novias
-title: ANA GUTIÉRREZ
+title: Ana Gutiérrez
 date: 2022-01-05T02:43:34.651Z
 camera: Vero Ramírez para @vdfoto_
 hair: Natalia Suárez
