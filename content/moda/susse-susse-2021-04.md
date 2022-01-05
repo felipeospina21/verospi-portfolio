@@ -5,7 +5,7 @@ gallery:
   - /img/verospi-makeup-commercial-31.jpg
   - /img/verospi-makeup-susse-5.gif
 templateKey: moda
-title: SÜSSE
+title: Süsse
 date: 2021-04-10T20:53:53.863Z
 client: SÜSSE
 camera: Julián Gaviria
