@@ -5,7 +5,7 @@ gallery:
   - /img/596_vdf0017.jpg
   - /img/735_vdf0255.jpg
 templateKey: novias
-title: Ana Kausel
+title: ANA KAUSEL
 date: 2022-01-05T02:55:06.217Z
 camera: "Valeria Duque & Vero Ramírez "
 hair: Natalia Suárez
