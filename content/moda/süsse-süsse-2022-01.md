@@ -5,7 +5,7 @@ gallery:
   - /img/verospi-makeup-susse-4.gif
   - /img/verospi-makeup-susse-1.gif
 templateKey: moda
-title: SÜSSE
+title: Süsse
 date: 2022-01-05T01:59:16.812Z
 client: SÜSSE
 camera: Jack Dizz
