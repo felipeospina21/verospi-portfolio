@@ -8,6 +8,7 @@ templateKey: moda
 title: Bronzini
 date: 2021-04-10T23:12:50.080Z
 client: BRONZINI
-camera: Felipe Loaiza @felipeloaizafoto
-model: Sofia Kaless @sofiakaless
+camera: "Felipe Loaiza "
+model: "Sofia Kaless "
+artDirector: NN Producción
 ---
