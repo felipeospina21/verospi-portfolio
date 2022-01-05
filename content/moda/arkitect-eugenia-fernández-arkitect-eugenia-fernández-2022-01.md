@@ -5,7 +5,7 @@ gallery:
   - /img/verospi-makeup-arkitect-eugenia-1.gif
   - /img/verospi-makeup-arkitect-eugenia
 templateKey: moda
-title: ARKITECT & EUGENIA FERNÁNDEZ
+title: Arkitect & Eugenia Fernández
 date: 2022-01-04T00:15:47.714Z
 camera: Andrea Swarz @andreaswarz
 model: Fernanda Abbott - Milla Natel
