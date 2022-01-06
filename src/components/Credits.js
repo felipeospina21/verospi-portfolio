@@ -16,7 +16,6 @@ const Credits = ({ frontmatter }) => {
               {frontmatter.templateKey === "editorial"
                 ? "Editorial: "
                 : "Cliente: "}
-              :
             </TdBold>
             <Td>{frontmatter.client}</Td>
           </Tr>
@@ -33,7 +32,7 @@ const Credits = ({ frontmatter }) => {
 
         {frontmatter.model ? (
           <Tr>
-            <TdBold>{modelArr.length > 1 ? "Model@s" : "Model@"}</TdBold>
+            <TdBold>{modelArr.length > 1 ? "Model@s:" : "Model@:"}</TdBold>
             <Td>{frontmatter.model}</Td>
           </Tr>
         ) : null}

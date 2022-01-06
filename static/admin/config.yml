@@ -80,7 +80,7 @@ collections:
           required: false,
         }
       - {
-          label: "Dirección de arte",
+          label: "Dirección de arte / Producción",
           name: "artDirector",
           widget: "string",
           required: false,
@@ -131,7 +131,7 @@ collections:
           required: false,
         }
       - {
-          label: "Dirección de arte",
+          label: "Dirección de arte / Producción",
           name: "artDirector",
           widget: "string",
           required: false,
@@ -179,7 +179,7 @@ collections:
           required: false,
         }
       - {
-          label: "Dirección de arte",
+          label: "Dirección de arte / Producción",
           name: "artDirector",
           widget: "string",
           required: false,
@@ -189,7 +189,7 @@ collections:
     files:
       - label: "Listado de Clientes"
         name: "clientsList"
-        file: "content/clients.yml"
+        file: "content/clients"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Clientes"

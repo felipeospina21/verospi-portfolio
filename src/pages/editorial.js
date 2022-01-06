@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 // import Seo from "../components/Seo"
 import { Heading, Center } from "@chakra-ui/react"
-import ClientsFilter from "../components/ClientsFilter"
+import Collections from "../components/Collections"
 
 export default function editorialPage({ data }) {
   return (
@@ -13,7 +13,7 @@ export default function editorialPage({ data }) {
           Editorial
         </Heading>
       </Center>
-      <ClientsFilter data={data} />
+      <Collections data={data.allMarkdownRemark.edges} />
     </>
   )
 }
