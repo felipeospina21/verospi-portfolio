@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react"
 import ContactInfo from "./ContactInfo"
 import Social from "./Social"
-import { Box, Center } from "@chakra-ui/react"
+import { Box, Center, Link } from "@chakra-ui/react"
 
 const Footer = () => {
   const [width, setWidth] = useState(0)
   const breakpoint = 720
 
-  useEffect(()=>{
+  useEffect(() => {
     setWidth(window.innerWidth)
   }, [])
 
@@ -34,7 +34,17 @@ const Footer = () => {
         </Box>
       </Box>
       <Center fontSize="xs" m="0.5rem auto">
-        Creado por Felipe Ospina
+        Creado por{" "}
+        <Box ml="0.3rem">
+          <Link
+            isExternal
+            fontWeight={800}
+            color="teal.500"
+            href="https://www.linkedin.com/in/felipe-ospina-webdev/"
+          >
+            Felipe Ospina
+          </Link>
+        </Box>
       </Center>
     </>
   )
