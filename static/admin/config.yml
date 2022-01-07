@@ -189,7 +189,7 @@ collections:
     files:
       - label: "Listado de Clientes"
         name: "clientsList"
-        file: "content/clients/clients.yml"
+        file: "content/clients/clientes.yml"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Clientes"
