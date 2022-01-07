@@ -60,7 +60,7 @@ collections:
       - label: "Cliente"
         name: "client"
         widget: "relation"
-        collection: "clientes"
+        collection: "clients"
         search_fields: ["clientes.*.name"]
         value_field: "clientes.*.name"
         multiple: false
@@ -111,7 +111,7 @@ collections:
       - label: "Cliente"
         name: "client"
         widget: "relation"
-        collection: "clientes"
+        collection: "clients"
         search_fields: ["clientes.*.name"]
         value_field: "clientes.*.name"
         multiple: false
@@ -163,7 +163,7 @@ collections:
       - label: "Cliente"
         name: "client"
         widget: "relation"
-        collection: "clientes"
+        collection: "clients"
         search_fields: ["clientes.*.name"]
         value_field: "clientes.*.name"
         multiple: false
