@@ -7,7 +7,6 @@ import Collections from "./Collections"
 const ClientsFilter = ({ data }) => {
   const allPosts = [...data.allMarkdownRemark.edges]
   allPosts.map(element => element.node.id = nanoid())
-  // console.log(allPosts[0].node.node)
 
   const [filteredPosts, setFilteredPosts] = useState(allPosts)
 

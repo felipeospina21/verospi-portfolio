@@ -7,7 +7,7 @@ import Video from "./Video"
 const CollectionGrid = ({ frontmatter }) => {
   return (
     <Grid
-      templateColumns={["1fr", null, null, null, "repeat(3,1fr)"]}
+      templateColumns={["1fr", null, null, "repeat(2,1fr)", "repeat(3,1fr)"]}
       gap={4}
       justifyContent="center"
     >

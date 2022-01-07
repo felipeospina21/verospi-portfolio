@@ -185,7 +185,7 @@ collections:
           required: false,
         }
   - label: "Clientes"
-    name: "clientes"
+    name: "clients"
     files:
       - label: "Listado de Clientes"
         name: "clientsList"
