@@ -44,7 +44,7 @@ export const pageQuery = graphql`
       }
     }
     clientsYaml {
-      categories {
+      clientes {
         name
       }
     }

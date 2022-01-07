@@ -26,7 +26,7 @@ const ClientsFilter = ({ data }) => {
   return (
     <>
       <TagsFilter
-        clients={data.clientsYaml.categories}
+        clients={data.clientsYaml.clientes}
         filterAllPosts={filterAllPosts}
         filterPostsByClient={filterPostsByClient}
       />
